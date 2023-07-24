@@ -5,9 +5,9 @@ let ethereumProvider = undefined;
 const connectButton = document.getElementById("connect-button");
 
 // 1. Define constants
-const projectId = 'cdbd18f9f96172be74c3e351ce99b908';
-if (!projectId) {
-  throw new Error("You need to provide VITE_PROJECT_ID env variable");
+const projectId = 'YOUR_PROJECT_ID';
+if (projectId === 'YOUR_PROJECT_ID') {
+  throw new Error("You need to provide a project ID");
 }
 
 // 4. Connect to provider, also handles opening and closing modal under the hood
